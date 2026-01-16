@@ -91,7 +91,7 @@ This yields:
 > **12 attributes × 2 task types × 100 items = 2,400 question-audio pairs.**
 
 <p align="center">
-  <img src="figures/sonicbench_overview.pdf" width="650" alt="SonicBench Overview">
+  <img src="figures/sonicbench_overview.png" width="650" alt="SonicBench Overview">
 </p>
 <p align="center"><i>
 Illustration of SonicBench attributes and perceptual dimensions.
