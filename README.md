@@ -45,20 +45,17 @@ All dataset files are hosted on **Hugging Face**, and this repo provides:
 
 ### Why Physical Audio Perception?
 
-Large Audio Language Models (LALMs) have become a unified interface for diverse auditory tasks by aligning pre-trained audio encoders with LLMs. Current evaluations, however, **focus almost exclusively on semantic and paralinguistic skills** (ASR, captioning, emotion, etc.), leaving **physical perception** under-explored.
+Large Audio Language Models (LALMs) have recently emerged as a unified interface for a wide range of auditory tasks by aligning pre-trained audio encoders with Large Language Models (LLMs). Existing evaluations, however, **focus predominantly on semantic and paralinguistic capabilities** (ASR, captioning, emotion, etc.), while **systematic evaluation of physical perception** remains limited.
 
-Physical perception refers to the ability to interpret **intrinsic properties of audio signals**, such as:
+Here, physical perception refers to the ability to interpret **intrinsic properties of audio signals**, such as:
 
 - pitch, loudness, duration,  
 - spatial location and reverberation,  
 - texture and timbre, and  
 - scene-level properties like counting.
 
-These attributes form the **primitive layer** on which any robust auditory reasoning must be built, analogous to **basic arithmetic** for language models doing math. In real-world and embodied scenarios, agents must infer urgency or danger from physical cues (pitch, tempo, direction) even without any semantic content.  
+These attributes underpin **robust auditory intelligence**. Analogous to how **visual intelligence** grounds complex scene understanding in intrinsic attributes like **color and geometry**, reliable audio reasoning depends on accurate **physical grounding** in basic acoustic attributes. In real-world and embodied settings, for example, an agent must infer urgency or danger from physical cues such as **pitch, tempo, and direction**, even in the absence of semantic content. Without such grounding, strong performance on high-level tasks can easily reflect **dataset shortcuts** rather than genuinely grounded auditory understanding. SonicBench is designed precisely to probe this **physical grounding gap**.
 
-If a model passes high-level tasks but fails these basic physical tests, its competence likely stems more from **dataset shortcuts** than from genuine auditory understanding.
-
-SonicBench is designed precisely to probe this **physical grounding gap**.
 
 ### Tasks, Attributes, and Data
 
@@ -122,18 +119,19 @@ We release the **full inference results of 36 systems** evaluated on SonicBench.
 
 * Main benchmark accuracy for each model × attribute × task type,
 * Detailed **recognition vs. comparison** breakdowns,
-* **Encoder probing** results based on `probe_json` splits, and
+* **Encoder probing** results based on `probe_json` splits.
 
 A simplified structure (the exact layout may evolve slightly):
 
 ```text
 Results/
-├── main/                      # Main benchmark results for 36 systems
-│   ├── qwen3_omni.json
+├── main_results/                      # Main benchmark results for 36 systems
+│   ├── qwen3_omni/                    # attributes_task.jsonl - 24 jsonl files
 │   ├── ...
-├── comparison_vs_recognition/ # Paradigm-wise breakdowns
-├── probing/                   # Encoder probing results on probe_json splits
-└── plots/                     # Pre-rendered tables / figures used in the paper
+├── probing_results/                   # Encoder probing results on probe_json splits
+│   ├── qwen3_omni_encoder/            # attributes_task.jsonl - 24 jsonl files
+│   ├── ...
+└── ...                      
 ```
 
 ---
@@ -191,6 +189,24 @@ SonicBench is designed primarily as an **evaluation and analysis benchmark** for
 
 > We recommend treating all files in `json/` as **held-out test sets**.  
 > For training probes or auxiliary models, please use the splits provided under `probe_json/`.
+
+---
+
+## TODO / Roadmap
+
+We are gradually open-sourcing all components used in the SonicBench paper.
+
+- [x] **Benchmark dataset on HuggingFace**  
+  `YirongSun/SonicBench` has been uploaded with all audio and JSON files.
+
+- [ ] **arXiv paper link**  
+  The SonicBench preprint is being uploaded to arXiv. We will update the badge and citation once the ID is available.
+
+- [ ] **Full inference results under `./Results/`**  
+  We are cleaning and organizing the outputs of all evaluated systems and will release them here.
+
+- [ ] **SonicBench Toolbox under `./Toolbox/`**  
+  The toolbox used to generate all benchmark stimuli is being refactored and documented. A public, research-friendly version will be pushed to this repository.
 
 ---
 
