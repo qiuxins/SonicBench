@@ -37,7 +37,7 @@ SonicBench is a **psychophysically grounded** benchmark that probes **physical a
 All dataset files are hosted on **Hugging Face**, and this repo provides:
 
 - The **SonicBench Toolbox** for controlled stimulus generation (`./Toolbox/`), and  
-- The **full inference results of 36 systems** (`./Results/`).
+- The **full inference outputs of 36 systems** (`./Results/`).
 
 ---
 
@@ -110,28 +110,26 @@ The **SonicBench Toolbox** is the core component used in our paper to generate a
 - Reproduce or extend the **psychophysical design** of SonicBench in your own experiments.
 
 ---
-
+ 
 ## Results
 
-> All evaluation outputs for the paper are stored under **`./Results/`**.
+> All **raw model inference outputs** used in the SonicBench paper are stored under **`./Results/`**.
 
-We release the **full inference results of 36 systems** evaluated on SonicBench. These include:
-
-* Main benchmark accuracy for each model × attribute × task type,
-* Detailed **recognition vs. comparison** breakdowns,
-* **Encoder probing** results based on `probe_json` splits.
+Here, we release the **per-item predictions** of all evaluated systems.
 
 A simplified structure (the exact layout may evolve slightly):
 
 ```text
 Results/
-├── main_results/                      # Main benchmark results for 36 systems
-│   ├── qwen3_omni/                    # attributes_task.jsonl - 24 jsonl files
-│   ├── ...
-├── probing_results/                   # Encoder probing results on probe_json splits
-│   ├── qwen3_omni_encoder/            # attributes_task.jsonl - 24 jsonl files
-│   ├── ...
-└── ...                      
+├── main_inference/                # Raw predictions for the main benchmark
+│   ├── qwen3_omni/                # 24 JSON/JSONL files (12 attributes × 2 tasks)
+│   ├── <other_model>/             # Same schema
+│   └── ...
+├── probing_inference/             # Inference used for encoder probing experiments
+│   ├── qwen3_omni_encoder/        # 24 JSON/JSONL files aligned with probe_json splits
+│   ├── <other_encoder>/          
+│   └── ...
+└── ...
 ```
 
 ---
@@ -141,7 +139,7 @@ Results/
 SonicBench reveals several consistent patterns across **36 evaluated systems**:
 Using SonicBench, we evaluate **36 systems** across three families:
 
-- **LALMs** – Large Audio(-Language) Models built by aligning pre-trained audio encoders with LLMs  
+- **LALMs** – Large Audio Language Models built by aligning pre-trained audio encoders with LLMs  
 - **LARMs** – audio-specific reasoning models  
 - **OLMs** – omni-modal models that include an audio interface
 
@@ -167,7 +165,7 @@ SonicBench uncovers several consistent patterns:
    This shows that the **physical cues are already present** in the encoder representations.  
    The primary bottleneck lies in **alignment and decoding**-the projector and language layers fail to faithfully leverage the sensory information they receive.
 
-For detailed results, please see `./Results/`.
+For detailed results, please see our paper.
 
 ---
 
@@ -187,8 +185,8 @@ SonicBench is designed primarily as an **evaluation and analysis benchmark** for
 * **Encoder probing and architecture analysis**  
   Use `probe_json` train/eval splits to attach simple probes to audio encoders, isolating where information is lost along the encoder-projector-LLM pipeline.
 
-> We recommend treating all files in `json/` as **held-out test sets**.  
-> For training probes or auxiliary models, please use the splits provided under `probe_json/`.
+> We recommend treating all files in `json/` as **held-out test sets** in HF Dataset.  
+> For training probes, please use the splits provided under `probe_json/` in HF Dataset.
 
 ---
 
