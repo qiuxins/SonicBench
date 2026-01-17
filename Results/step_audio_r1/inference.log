@@ -1,0 +1,83 @@
+2025-12-29 03:24:10 [INFO] Step-Audio-R1 client connecting to api_url=http://localhost:9999/v1/chat/completions, model_name=Step-Audio-R1
+2025-12-29 03:24:10 [INFO] Input JSON dir: /data/home/sunyirong/code/Step-Audio-R1/sonicbench_data/json
+2025-12-29 03:24:10 [INFO] Output JSONL dir: /data/home/sunyirong/code/Step-Audio-R1/output_jsonls
+2025-12-29 03:24:10 [INFO] ========= Step-Audio-R1 批量推理开始（含断点续跑） =========
+2025-12-29 03:24:10 [INFO] Processing file: /data/home/sunyirong/code/Step-Audio-R1/sonicbench_data/json/brightness_comparison.json
+2025-12-29 03:24:10 [INFO] [Start] Fresh run for brightness_comparison.json (write mode).
+2025-12-29 03:25:09 [INFO] Step-Audio-R1 client connecting to api_url=http://localhost:9999/v1/chat/completions, model_name=Step-Audio-R1
+2025-12-29 03:25:09 [INFO] Input JSON dir: /data/home/sunyirong/code/Step-Audio-R1/sonicbench_data/json
+2025-12-29 03:25:09 [INFO] Output JSONL dir: /data/home/sunyirong/code/Step-Audio-R1/output_jsonls
+2025-12-29 03:25:09 [INFO] ========= Step-Audio-R1 批量推理开始（含断点续跑） =========
+2025-12-29 03:25:09 [INFO] Processing file: /data/home/sunyirong/code/Step-Audio-R1/sonicbench_data/json/brightness_comparison.json
+2025-12-29 03:25:09 [INFO] [Start] Fresh run for brightness_comparison.json (write mode).
+2025-12-29 03:46:14 [INFO] Results saved to /data/home/sunyirong/code/Step-Audio-R1/output_jsonls/brightness_comparison.jsonl (100/100)
+2025-12-29 03:46:14 [INFO] Processing file: /data/home/sunyirong/code/Step-Audio-R1/sonicbench_data/json/brightness_recog.json
+2025-12-29 03:46:14 [INFO] [Start] Fresh run for brightness_recog.json (write mode).
+2025-12-29 04:03:42 [INFO] Results saved to /data/home/sunyirong/code/Step-Audio-R1/output_jsonls/brightness_recog.jsonl (100/100)
+2025-12-29 04:03:42 [INFO] Processing file: /data/home/sunyirong/code/Step-Audio-R1/sonicbench_data/json/counting_comparison.json
+2025-12-29 04:03:42 [INFO] [Start] Fresh run for counting_comparison.json (write mode).
+2025-12-29 04:24:18 [INFO] Results saved to /data/home/sunyirong/code/Step-Audio-R1/output_jsonls/counting_comparison.jsonl (100/100)
+2025-12-29 04:24:18 [INFO] Processing file: /data/home/sunyirong/code/Step-Audio-R1/sonicbench_data/json/counting_recog.json
+2025-12-29 04:24:18 [INFO] [Start] Fresh run for counting_recog.json (write mode).
+2025-12-29 04:52:22 [INFO] Results saved to /data/home/sunyirong/code/Step-Audio-R1/output_jsonls/counting_recog.jsonl (100/100)
+2025-12-29 04:52:22 [INFO] Processing file: /data/home/sunyirong/code/Step-Audio-R1/sonicbench_data/json/direction_comparison.json
+2025-12-29 04:52:22 [INFO] [Start] Fresh run for direction_comparison.json (write mode).
+2025-12-29 05:17:38 [INFO] Results saved to /data/home/sunyirong/code/Step-Audio-R1/output_jsonls/direction_comparison.jsonl (100/100)
+2025-12-29 05:17:38 [INFO] Processing file: /data/home/sunyirong/code/Step-Audio-R1/sonicbench_data/json/direction_recog.json
+2025-12-29 05:17:38 [INFO] [Start] Fresh run for direction_recog.json (write mode).
+2025-12-29 05:38:33 [INFO] Results saved to /data/home/sunyirong/code/Step-Audio-R1/output_jsonls/direction_recog.jsonl (100/100)
+2025-12-29 05:38:33 [INFO] Processing file: /data/home/sunyirong/code/Step-Audio-R1/sonicbench_data/json/distance_comparison.json
+2025-12-29 05:38:33 [INFO] [Start] Fresh run for distance_comparison.json (write mode).
+2025-12-29 05:55:12 [INFO] Results saved to /data/home/sunyirong/code/Step-Audio-R1/output_jsonls/distance_comparison.jsonl (100/100)
+2025-12-29 05:55:12 [INFO] Processing file: /data/home/sunyirong/code/Step-Audio-R1/sonicbench_data/json/distance_recog.json
+2025-12-29 05:55:12 [INFO] [Start] Fresh run for distance_recog.json (write mode).
+2025-12-29 06:12:49 [INFO] Results saved to /data/home/sunyirong/code/Step-Audio-R1/output_jsonls/distance_recog.jsonl (100/100)
+2025-12-29 06:12:49 [INFO] Processing file: /data/home/sunyirong/code/Step-Audio-R1/sonicbench_data/json/duration_comparison.json
+2025-12-29 06:12:49 [INFO] [Start] Fresh run for duration_comparison.json (write mode).
+2025-12-29 06:45:39 [INFO] Results saved to /data/home/sunyirong/code/Step-Audio-R1/output_jsonls/duration_comparison.jsonl (100/100)
+2025-12-29 06:45:39 [INFO] Processing file: /data/home/sunyirong/code/Step-Audio-R1/sonicbench_data/json/duration_recog.json
+2025-12-29 06:45:39 [INFO] [Start] Fresh run for duration_recog.json (write mode).
+2025-12-29 07:10:52 [INFO] Results saved to /data/home/sunyirong/code/Step-Audio-R1/output_jsonls/duration_recog.jsonl (100/100)
+2025-12-29 07:10:52 [INFO] Processing file: /data/home/sunyirong/code/Step-Audio-R1/sonicbench_data/json/loudness_comparison.json
+2025-12-29 07:10:52 [INFO] [Start] Fresh run for loudness_comparison.json (write mode).
+2025-12-29 07:36:35 [INFO] Results saved to /data/home/sunyirong/code/Step-Audio-R1/output_jsonls/loudness_comparison.jsonl (100/100)
+2025-12-29 07:36:35 [INFO] Processing file: /data/home/sunyirong/code/Step-Audio-R1/sonicbench_data/json/loudness_recog.json
+2025-12-29 07:36:35 [INFO] [Start] Fresh run for loudness_recog.json (write mode).
+2025-12-29 08:17:13 [INFO] Results saved to /data/home/sunyirong/code/Step-Audio-R1/output_jsonls/loudness_recog.jsonl (100/100)
+2025-12-29 08:17:13 [INFO] Processing file: /data/home/sunyirong/code/Step-Audio-R1/sonicbench_data/json/pitch_comparison.json
+2025-12-29 08:17:13 [INFO] [Start] Fresh run for pitch_comparison.json (write mode).
+2025-12-29 08:36:28 [INFO] Results saved to /data/home/sunyirong/code/Step-Audio-R1/output_jsonls/pitch_comparison.jsonl (100/100)
+2025-12-29 08:36:28 [INFO] Processing file: /data/home/sunyirong/code/Step-Audio-R1/sonicbench_data/json/pitch_recog.json
+2025-12-29 08:36:28 [INFO] [Start] Fresh run for pitch_recog.json (write mode).
+2025-12-29 09:16:01 [INFO] Results saved to /data/home/sunyirong/code/Step-Audio-R1/output_jsonls/pitch_recog.jsonl (100/100)
+2025-12-29 09:16:01 [INFO] Processing file: /data/home/sunyirong/code/Step-Audio-R1/sonicbench_data/json/reverberation_comparison.json
+2025-12-29 09:16:01 [INFO] [Start] Fresh run for reverberation_comparison.json (write mode).
+2025-12-29 09:39:36 [INFO] Results saved to /data/home/sunyirong/code/Step-Audio-R1/output_jsonls/reverberation_comparison.jsonl (100/100)
+2025-12-29 09:39:36 [INFO] Processing file: /data/home/sunyirong/code/Step-Audio-R1/sonicbench_data/json/reverberation_recog.json
+2025-12-29 09:39:36 [INFO] [Start] Fresh run for reverberation_recog.json (write mode).
+2025-12-29 09:53:49 [INFO] Results saved to /data/home/sunyirong/code/Step-Audio-R1/output_jsonls/reverberation_recog.jsonl (100/100)
+2025-12-29 09:53:49 [INFO] Processing file: /data/home/sunyirong/code/Step-Audio-R1/sonicbench_data/json/tempo_comparison.json
+2025-12-29 09:53:49 [INFO] [Start] Fresh run for tempo_comparison.json (write mode).
+2025-12-29 10:24:40 [INFO] Results saved to /data/home/sunyirong/code/Step-Audio-R1/output_jsonls/tempo_comparison.jsonl (100/100)
+2025-12-29 10:24:40 [INFO] Processing file: /data/home/sunyirong/code/Step-Audio-R1/sonicbench_data/json/tempo_recog.json
+2025-12-29 10:24:40 [INFO] [Start] Fresh run for tempo_recog.json (write mode).
+2025-12-29 10:52:18 [INFO] Results saved to /data/home/sunyirong/code/Step-Audio-R1/output_jsonls/tempo_recog.jsonl (100/100)
+2025-12-29 10:52:18 [INFO] Processing file: /data/home/sunyirong/code/Step-Audio-R1/sonicbench_data/json/texture_comparison.json
+2025-12-29 10:52:18 [INFO] [Start] Fresh run for texture_comparison.json (write mode).
+2025-12-29 11:05:20 [INFO] Results saved to /data/home/sunyirong/code/Step-Audio-R1/output_jsonls/texture_comparison.jsonl (100/100)
+2025-12-29 11:05:20 [INFO] Processing file: /data/home/sunyirong/code/Step-Audio-R1/sonicbench_data/json/texture_recog.json
+2025-12-29 11:05:20 [INFO] [Start] Fresh run for texture_recog.json (write mode).
+2025-12-29 11:15:34 [INFO] Results saved to /data/home/sunyirong/code/Step-Audio-R1/output_jsonls/texture_recog.jsonl (100/100)
+2025-12-29 11:15:34 [INFO] Processing file: /data/home/sunyirong/code/Step-Audio-R1/sonicbench_data/json/timbre_comparison.json
+2025-12-29 11:15:34 [INFO] [Start] Fresh run for timbre_comparison.json (write mode).
+2025-12-29 11:36:00 [INFO] Results saved to /data/home/sunyirong/code/Step-Audio-R1/output_jsonls/timbre_comparison.jsonl (100/100)
+2025-12-29 11:36:00 [INFO] Processing file: /data/home/sunyirong/code/Step-Audio-R1/sonicbench_data/json/timbre_recog.json
+2025-12-29 11:36:00 [INFO] [Start] Fresh run for timbre_recog.json (write mode).
+2025-12-29 12:39:15 [INFO] Results saved to /data/home/sunyirong/code/Step-Audio-R1/output_jsonls/timbre_recog.jsonl (100/100)
+2025-12-29 12:39:15 [INFO] Processing file: /data/home/sunyirong/code/Step-Audio-R1/sonicbench_data/json/velocity_comparison.json
+2025-12-29 12:39:15 [INFO] [Start] Fresh run for velocity_comparison.json (write mode).
+2025-12-29 14:50:37 [INFO] Results saved to /data/home/sunyirong/code/Step-Audio-R1/output_jsonls/velocity_comparison.jsonl (100/100)
+2025-12-29 14:50:37 [INFO] Processing file: /data/home/sunyirong/code/Step-Audio-R1/sonicbench_data/json/velocity_recog.json
+2025-12-29 14:50:37 [INFO] [Start] Fresh run for velocity_recog.json (write mode).
+2025-12-29 15:49:46 [INFO] Results saved to /data/home/sunyirong/code/Step-Audio-R1/output_jsonls/velocity_recog.jsonl (100/100)
+2025-12-29 15:49:46 [INFO] ========= Step-Audio-R1 批量推理结束 =========
