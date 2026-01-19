@@ -3,7 +3,7 @@
 *Psychophysically grounded benchmark + toolbox for probing physical audio perception in Large Audio Language Models.*
 
 <p align="center">
-  <a href="https://arxiv.org/abs/xxxx.xxxxx">
+  <a href="https://arxiv.org/abs/2601.11039">
     <img src="https://img.shields.io/badge/arXiv-SonicBench-B31B1B.svg" alt="arXiv">
   </a>
   <a href="https://huggingface.co/datasets/YirongSun/SonicBench">
@@ -191,7 +191,7 @@ We are gradually open-sourcing all components used in the SonicBench paper.
 - [x] **Benchmark dataset on HuggingFace**  
   `YirongSun/SonicBench` has been uploaded with all audio and JSON files.
 
-- [ ] **arXiv paper link**  
+- [x] **arXiv paper link**  
   The SonicBench preprint is being uploaded to arXiv. We will update the badge and citation once the ID is available.
 
 - [x] **Full inference outputs under `./Results/`**  
@@ -207,7 +207,15 @@ We are gradually open-sourcing all components used in the SonicBench paper.
 If you find SonicBench useful in your research, please cite:
 
 ```bibtex
-xxx
+@misc{sun2026sonicbench,
+      title={SonicBench: Dissecting the Physical Perception Bottleneck in Large Audio Language Models}, 
+      author={Yirong Sun and Yanjun Chen and Xin Qiu and Gang Zhang and Hongyu Chen and Daokuan Wu and Chengming Li and Min Yang and Dawei Zhu and Wei Zhang and Xiaoyu Shen},
+      year={2026},
+      eprint={2601.11039},
+      archivePrefix={arXiv},
+      primaryClass={cs.SD},
+      url={https://arxiv.org/abs/2601.11039}, 
+}
 ```
 
 ---
