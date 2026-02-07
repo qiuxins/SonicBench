@@ -52,7 +52,7 @@ Install required dependencies:
 
 ```bash
 pip install numpy scipy librosa soundfile pyloudnorm
-
+```
 ## Output Format
 Each run produces:
 
